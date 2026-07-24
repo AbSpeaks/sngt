@@ -975,7 +975,7 @@ textarea.form-input {
     margin-bottom: 6px;
 }
 
-/* Media Queries for Custom Pages */
+/* Media Queries for Custom Pages & Mobile Enhancements */
 @media (max-width: 992px) {
     .contact-grid, .bio-split, .hero-grid {
         grid-template-columns: 1fr;
@@ -992,6 +992,60 @@ textarea.form-input {
     }
     .hero-section {
         padding: 40px 0;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar Mobile Adaptations */
+    .header-top {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        border-top: 1px solid var(--color-border);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        max-height: 450px;
+    }
+    
+    .nav-link {
+        padding: 14px 24px;
+        display: block;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 1.05rem;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
     }
 }
 
@@ -999,21 +1053,66 @@ textarea.form-input {
     .board-grid, .gallery-grid, .philosophy-grid {
         grid-template-columns: 1fr;
     }
+    
     .contact-form-card {
         padding: 24px;
     }
+    
     .hero-title {
         font-size: 2.2rem;
     }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
     .section-title {
         font-size: 2rem;
     }
+
+    .hero-portrait {
+        width: 220px;
+        height: 220px;
+    }
+
+    .portrait-glow {
+        width: 250px;
+        height: 250px;
+    }
 }
 
-@media (max-width: 768px) {
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
+@media (max-width: 480px) {
+    .logo-text h1 {
+        font-size: 1rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.65rem;
+    }
+    
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 1.25rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    
+    .hero-text-content div {
+        display: flex;
+        flex-direction: column;
     }
 }
 
