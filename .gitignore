@@ -1,0 +1,9 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Vercel Project Config
+.vercel
+
+# Logs
+*.log

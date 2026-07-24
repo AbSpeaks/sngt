@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Sree Narayana Gurudeva Trust Temple, Nashik</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="View the photo gallery of Sree Narayana Gurudeva Trust Temple, Nashik. Discover photographs of temple rituals, festivals, community activities, and cultural wings.">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- TOPBAR CONTACT INFO -->
+    <div class="header-top">
+        <div class="container header-top-content">
+            <div class="contact-info-list">
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 94239 71600</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@sngtnashik.org</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Nashik, Maharashtra</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-icon-link"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" class="social-icon-link"><i class="fa-solid fa-om"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLASSMORPHIC NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo-area">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">
+                    <h1>Sree Narayana Gurudeva Trust</h1>
+                    <p>Nashik, Maharashtra</p>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="guru.html" class="nav-link">Guru</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INNER PAGE TITLE BANNER -->
+    <section class="section-padding" style="background: radial-gradient(circle, var(--color-maroon) 0%, var(--color-charcoal) 100%); color: var(--color-white); text-align: center; padding: 60px 0; border-bottom: 4px solid var(--color-gold);">
+        <div class="container">
+            <h1 class="fade-up" style="color: var(--color-gold); font-size: 2.8rem; margin-bottom: 10px;">Photo Gallery</h1>
+            <p class="fade-up" style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                Visual stories of faith, celebrations, and community services at the Nashik temple.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALLERY CONTAINER WITH FILTERS -->
+    <section class="section-padding">
+        <div class="container">
+            
+            <!-- Category Filters -->
+            <div class="tab-filters fade-up">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="temple">Temple & Relics</button>
+                <button class="filter-btn" data-filter="festivals">Festivals & Celebrations</button>
+                <button class="filter-btn" data-filter="social">Social Welfare</button>
+                <button class="filter-btn" data-filter="cultural">Cultural Wing</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid fade-up">
+                <!-- Item 1: Temple Facade -->
+                <div class="gallery-item" data-categories="temple">
+                    <div class="gallery-image-container">
+                        <img src="images/temple_bg.png" alt="Sree Narayana Gurudeva Mandiram Facade">
+                        <div class="gallery-overlay">
+                            <div class="gallery-caption">
+                                <h4>Temple Entrance</h4>
+                                <p>Sree Narayana Gurudeva Mandiram, Nashik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Guru Portrait -->
+                <div class="gallery-item" data-categories="temple">
+                    <div class="gallery-image-container">
+                        <img src="images/guru_portrait.png" alt="Sree Narayana Guru Spiritual Portrait">
+                        <div class="gallery-overlay">
+                            <div class="gallery-caption">
+                                <h4>Spiritual Sannidhi</h4>
+                                <p>Sree Narayana Gurudeva Sacred Sanctum</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Festival celebration -->
+                <div class="gallery-item" data-categories="festivals">
+                    <div class="gallery-image-container">
+                        <img src="images/festival.png" alt="Deeparadhana Celebration">
+                        <div class="gallery-overlay">
+                            <div class="gallery-caption">
+                                <h4>Deeparadhana Festival</h4>
+                                <p>Annual celebration and lights festival at temple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Charity social work -->
+                <div class="gallery-item" data-categories="social">
+                    <div class="gallery-image-container">
+                        <img src="images/social_work.png" alt="Volunteers distributing education kits">
+                        <div class="gallery-overlay">
+                            <div class="gallery-caption">
+                                <h4>Educational Distribution</h4>
+                                <p>Trust members giving kits to local children</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Cultural activities -->
+                <div class="gallery-item" data-categories="cultural">
+                    <div class="gallery-image-container">
+                        <img src="images/cultural_activity.png" alt="Children learning classical dance">
+                        <div class="gallery-overlay">
+                            <div class="gallery-caption">
+                                <h4>Balavedi Classes</h4>
+                                <p>Children learning traditional music and arts</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Sree Narayana Gurudeva Trust</h3>
+                    <p>
+                        Established to propagate the noble teachings of Sree Narayana Guru in Nashik, Maharashtra. We strive for spiritual harmony, social equality, and charitable empowerment based on the ideals of SNDP Kerala.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-link"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-icon-link"><i class="fa-solid fa-om"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="guru.html">Sree Narayana Guru</a></li>
+                        <li><a href="services.html">Services & Charity</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html#trustees">Board of Trustees</a></li>
+                        <li><a href="services.html#donations">Donations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Sree Narayana Gurudeva Trust Temple, Nashik, Maharashtra, India.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+91 94239 71600</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>info@sngtnashik.org</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sree Narayana Gurudeva Trust, Nashik. All Rights Reserved.</p>
+                <p>Designed for Harmony & Equality</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Core Interaction Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
