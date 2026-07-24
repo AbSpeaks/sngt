@@ -972,6 +972,9 @@ textarea.form-input {
 
 .alert-success h4 {
     color: #2e7d32;
+    margin-bottom: 6px;
+}
+
 /* Media Queries for Custom Pages & Mobile Enhancements */
 @media (max-width: 992px) {
     .contact-grid, .bio-split, .hero-grid {
